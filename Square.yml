@@ -6,6 +6,7 @@ info:
   contact:
     name: Antonio Bernabe Rodriguez
     email: abernabe@gmail.com
+    url: 'https://whatever.com'
 host: run-hello-api-j4a6w2xpuq-ew.a.run.app
 schemes:
   - https
