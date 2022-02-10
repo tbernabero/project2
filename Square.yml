@@ -81,3 +81,4 @@ responses:
       example-1:
         Required parameters: string
         Supplied parameters: string
+x-authorization: null
