@@ -1,0 +1,82 @@
+swagger: '2.0'
+info:
+  title: Square
+  version: 1.0.0
+  description: API to calculate the square of a number
+  contact:
+    name: Antonio Bernabe Rodriguez
+    email: abernabe@gmail.com
+host: run-hello-api-j4a6w2xpuq-ew.a.run.app
+schemes:
+  - https
+produces:
+  - application/json
+consumes:
+  - application/json
+paths:
+  /api:
+    parameters: []
+    get:
+      summary: Calculates the square for a given number
+      tags: []
+      responses:
+        '200':
+          description: Square calculated
+          schema:
+            $ref: '#/definitions/ValueSquared'
+          examples:
+            example-1:
+              Value Squared: 0
+        '400':
+          $ref: '#/responses/400'
+      operationId: get-number-square
+      description: Calculates the square for a given number
+      parameters:
+        - type: number
+          in: query
+          name: value
+          description: Number to be squared
+          required: true
+definitions:
+  ValueSquared:
+    description: ''
+    type: object
+    properties:
+      Value Squared:
+        type: number
+    required:
+      - Value Squared
+    x-examples:
+      example-1:
+        Value Squared: 9
+basePath: /
+responses:
+  '400':
+    description: Invalid request
+    content:
+      application/json:
+        schema:
+          properties:
+            id:
+              type: string
+    schema:
+      description: ''
+      type: object
+      properties:
+        Required parameters:
+          type: string
+          minLength: 1
+        Supplied parameters:
+          type: string
+          minLength: 1
+      required:
+        - Required parameters
+        - Supplied parameters
+      x-examples:
+        example-1:
+          Required parameters: value
+          Supplied parameters: '[''asdasd'']'
+    examples:
+      example-1:
+        Required parameters: string
+        Supplied parameters: string
