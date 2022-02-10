@@ -1,6 +1,7 @@
 swagger: '2.0'
 info:
   version: 1.0.0
+  description: A description for the API
   title: Swagger Petstore
   license:
     name: MIT

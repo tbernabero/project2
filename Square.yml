@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Square
   version: 1.0.0
-  description: API to calculate the square of a number
+  description: API to calculate the square of a number (Paack)
   contact:
     name: Antonio Bernabe Rodriguez
     email: abernabe@gmail.com

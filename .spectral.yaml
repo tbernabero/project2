@@ -1,0 +1,17 @@
+formats:
+  - oas2
+  - json-schema-draft7
+extends:
+  - 'spectral:oas'
+rules:
+  info-matches-paack:
+    description: This is an example rule
+    message: Info must contain Paack
+    given: $.info
+    recommended: true
+    type: style
+    then:
+      field: description
+      function: pattern
+      functionOptions:
+        match: Paack

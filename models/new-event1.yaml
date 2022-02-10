@@ -1,0 +1,35 @@
+title: event1
+type: object
+x-tags:
+  - event
+properties:
+  id:
+    type: string
+  stops:
+    type: array
+    items:
+      type: object
+      properties:
+        name:
+          type: string
+        id:
+          type: number
+        address:
+          type: object
+          properties:
+            lat:
+              type: number
+            long:
+              type: number
+        order:
+          type: number
+examples:
+  - id: string
+    stops:
+      - name: string
+        id: 0
+        address:
+          lat: 0
+          long: 0
+        order: 0
+description: 'New whatever event '
