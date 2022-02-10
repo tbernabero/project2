@@ -28,6 +28,10 @@ paths:
           examples:
             example-1:
               Value Squared: 0
+          headers:
+            dummy-header:
+              type: string
+              description: dummy
         '400':
           $ref: '#/responses/400'
       operationId: get-number-square
@@ -81,4 +85,3 @@ responses:
       example-1:
         Required parameters: string
         Supplied parameters: string
-x-authorization: null
